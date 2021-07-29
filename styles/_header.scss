@@ -1,0 +1,21 @@
+/* header */
+header {
+    max-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $black;
+    h2 {
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        color: $green;
+    }
+
+    h2 {
+        #points {
+            display: inline-block;
+            width: 80px;
+            height: 100%;
+        }
+    }
+}

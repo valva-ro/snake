@@ -1,0 +1,41 @@
+/* main */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    section.gameBoard {
+        height: calc(100vh - 1rem - 90px);
+        width: calc(100vh - 1rem - 90px);
+        margin: 1rem;
+        display: grid;
+        grid-template-rows: repeat(24, 1fr);
+        grid-template-columns: repeat(24, 1fr);
+        background-color: $gray;
+        border-radius: 5px;
+
+        .square {
+            border-radius: 5px;
+            border: solid 2px $gray;
+        }
+
+        .snake {
+            background-color: $green;
+        }
+
+        .food-easy {
+            background-color: #f8db5b;
+        }
+
+        .food-medium {
+            background-color: #f08731;
+        }
+
+        .food-hard {
+            background-color: #f03131;
+        }
+
+        .food-very-hard {
+            background-color: #8431f0;
+        }
+    }
+}

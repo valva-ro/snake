@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.green {
+    color: $green;
+}
+
+.white {
+    color: rgb(195, 195, 195);
+}
+
+.gray {
+    color: $gray;
+}
+
+body {
+    background-color: $black;
+    font-family: 'Courier New', Courier, monospace;
+}

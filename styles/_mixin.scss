@@ -1,0 +1,12 @@
+@mixin flex($justify:center, $align:center, $direction:row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+};
+
+@mixin enlarge-font-size($max-width, $rem) {
+    @media screen and (max-width:  $max-width) {
+        font-size: $rem;
+    }
+}
