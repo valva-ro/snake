@@ -1,5 +1,5 @@
 class Grid {
-    static GRID_SIZE = 23;
+    static GRID_SIZE = 26;
     static randomGridPosition() {
         return {
             x: Math.floor(Math.random() * this.GRID_SIZE + 1),

@@ -1,7 +1,7 @@
 class Snake {
 
     static snakeBody = [
-        { x: 18, y: 18 },
+        { x: (Math.ceil(Grid.GRID_SIZE / 2)) + 1, y: (Math.ceil(Grid.GRID_SIZE / 2)) + 1 },
     ];
     static speed = Level.getSpeed();
     static newSegments = 0;

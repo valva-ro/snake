@@ -76,10 +76,10 @@ main section.gameBoard {
   margin: 1rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[24];
-      grid-template-rows: repeat(24, 1fr);
-  -ms-grid-columns: (1fr)[24];
-      grid-template-columns: repeat(24, 1fr);
+  -ms-grid-rows: (1fr)[25];
+      grid-template-rows: repeat(25, 1fr);
+  -ms-grid-columns: (1fr)[26];
+      grid-template-columns: repeat(26, 1fr);
   background-color: #222222;
   border-radius: 5px;
 }

@@ -8,8 +8,8 @@ main {
         width: calc(100vh - 1rem - 90px);
         margin: 1rem;
         display: grid;
-        grid-template-rows: repeat(24, 1fr);
-        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(25, 1fr);
+        grid-template-columns: repeat(26, 1fr);
         background-color: $gray;
         border-radius: 5px;
 
