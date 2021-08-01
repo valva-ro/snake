@@ -9,7 +9,7 @@ main {
         margin: 1rem;
         display: grid;
         grid-template-rows: repeat(25, 1fr);
-        grid-template-columns: repeat(26, 1fr);
+        grid-template-columns: repeat(25, 1fr);
         background-color: $gray;
         border-radius: 5px;
 

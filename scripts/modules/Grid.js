@@ -1,5 +1,5 @@
 class Grid {
-    static GRID_SIZE = 26;
+    static GRID_SIZE = 25;
     static randomGridPosition() {
         return {
             x: Math.floor(Math.random() * this.GRID_SIZE + 1),
@@ -9,8 +9,8 @@ class Grid {
     
     static outisdeGrid(position) {
         return (
-            position.x < 1 || position.x >= this.GRID_SIZE ||
-            position.y < 1 || position.y >= this.GRID_SIZE
+            position.x < 1 || position.x > this.GRID_SIZE ||
+            position.y < 1 || position.y > this.GRID_SIZE
         );
     }
 }

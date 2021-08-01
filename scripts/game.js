@@ -16,8 +16,9 @@ function play(currentTime) {
     const secsSinceLastRender = (currentTime - lastRenderTime) / 100;
         
     if (gameOver) {
+        updateHighscore();
         (async () => { 
-            const confirm = await personalizedConfirm("Game Over :c wanna play again?"); 
+            const confirm = await personalizedConfirm("Game Over 😢 \nWanna play again?");
             if (confirm) {
                 location.reload();
             }
