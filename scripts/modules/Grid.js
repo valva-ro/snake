@@ -9,8 +9,8 @@ class Grid {
     
     static outisdeGrid(position) {
         return (
-            position.x < 1 || position.x > this.GRID_SIZE ||
-            position.y < 1 || position.y > this.GRID_SIZE
+            position.x < 1 || position.x >= this.GRID_SIZE ||
+            position.y < 1 || position.y >= this.GRID_SIZE
         );
     }
 }

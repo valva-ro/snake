@@ -14,12 +14,15 @@ window.onload = () => {
 function play(currentTime) {
 
     const secsSinceLastRender = (currentTime - lastRenderTime) / 100;
-
+        
     if (gameOver) {
-        // TODO: replace this confirm with a sweetalert
-        if (confirm("Game Over :c wanna play again?")) {
-            location.reload();
-        }
+        (async () => { 
+            const confirm = await personalizedConfirm("Game Over :c wanna play again?"); 
+            if (confirm) {
+                location.reload();
+            }
+            return;
+        })();
         return;
     }
 
@@ -51,5 +54,24 @@ function updateHighscore() {
     if (highscore < Level.points) {
         localStorage.setItem("highscore", Level.points);
         highscoreContainer.innerText = Level.points;
+    }
+}
+
+async function personalizedConfirm(msg) {
+    try {
+        let result = await Swal.fire({
+            title: `<h3 class="white">${msg}</h3>`,
+            showCancelButton: true,
+            background: '#0f0f0f',
+            cancelButtonColor: '#222222',
+            cancelButtonText: '<h3 class="green">No</h3>',
+            confirmButtonColor: '#2fe93e',
+            confirmButtonText: '<h3 class="gray">Yes</h3>',
+        }).then(result => {
+            return result.isConfirmed;
+        })
+        return result;
+    } catch(e) {
+        console.log(e);
     }
 }
